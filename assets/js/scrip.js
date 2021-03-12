@@ -36,14 +36,15 @@ function validaEmail() {
 }
 
 function validaAssunto() {
-    let txtAssunto = document.querySelector('#txtAssunto')
-     
-    if (assunto.value.length >= 100) {
+    let txtAssunto = document.querySelector('#txtAssunto')     
+    if (assunto.value.length >= 100) {    
         txtAssunto.innerHTML = 'Muito texto, mano. Fala menos aí! No máximo 100 caracteres'
         txtAssunto.style.color = 'red'
         txtAssunto.style.display = 'block'
+        
     } else {
-        txtAssunto.style.display = 'none'
+        txtAssunto.innerHTML = "Tudo certo!"
+        txtAssunto.style.color = 'green'
         assuntoOk = true
     }
 }
